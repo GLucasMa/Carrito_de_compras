@@ -1,0 +1,48 @@
+#def Descripcion(self):
+#        print(productos[0],"\n", "$",42.799, "\nEn stock:",3, "\nAzul", "\nPantalla 6.5 , Memoria interna 32GB, Cámara 50 MP + 2 MP\n")
+#        print(productos[1], "\n", "$", 99.999, "\nEn stock:",2, "\nVioleta", "\nPantalla 6.55, Memoria interna 128GB, Cámara 50 MP + 8 MP + 2 MP\n")
+#        print(productos[2], "\n", "$", 48.999, "\nEn stock:",1, "\nRojo", "\nGalaxy A04e cuenta con un procesador Octa-core y hasta 3 GB de memoria para un rendimiento rápido y eficiente para la tarea en cuestión. También puede agregar hasta 1 TB de almacenamiento con tarjeta microSD.")
+
+
+import os
+
+productos = {
+    "Samsung Galaxy A04 32GB" : 1000, 
+    "Motorola Moto G52" : 1001,
+    "Samsung Galaxy A04e 32g Sm-a042mzcaaro Cooper Libre" : 1002
+}
+
+class Carrito:
+    def __init__(self, nombre, marca, precio, stock, color, caracteristicas):
+        self.nombre = nombre
+        self.marca = marca
+        self.precio = precio
+        self.stock = stock
+        self.color = color
+        self.caracteristicas = caracteristicas
+
+    def descripcion(self):
+        print
+
+    def getDescripcion(self):
+        return self.producto
+    
+    
+
+while True:
+
+    print("""Bienvenido a multicompras, seleccione con un numero la opcion que desea:
+1) Mostrar productos en detalle 
+2) Mostrar información breve del producto
+3) Modificar carrito 
+4) Realizar compra
+5) Buscar producto por codigo
+6)Finalizar compra
+""")
+    numero = int(input (numero()))
+    os.system("cls")
+
+    if numero==1:
+        Descripcion.producto()
+        print (productos)
+
